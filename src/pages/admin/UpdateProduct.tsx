@@ -1,6 +1,6 @@
 
 import AdminLayout from '@/components/admin/AdminLayout';
-import UpdateProductFormComponent from '@/components/admin/updateProductForm';
+import UpdateProductForm from '@/components/admin/UpdateProductForm';
 
 const UpdateProduct = () => {
   return (
@@ -15,7 +15,7 @@ const UpdateProduct = () => {
           </p>
         </div>
         
-        <UpdateProductFormComponent />
+        <UpdateProductForm />
       </div>
     </AdminLayout>
   );
