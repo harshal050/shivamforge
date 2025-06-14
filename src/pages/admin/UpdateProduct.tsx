@@ -2,7 +2,7 @@
 import AdminLayout from '@/components/admin/AdminLayout';
 import UpdateProductFormComponent from '@/components/admin/updateProductForm';
 
-const ProductFormPage = () => {
+const UpdateProduct = () => {
   return (
     <AdminLayout>
       <div className="space-y-6">
@@ -21,4 +21,4 @@ const ProductFormPage = () => {
   );
 };
 
-export default ProductFormPage;
+export default UpdateProduct;
