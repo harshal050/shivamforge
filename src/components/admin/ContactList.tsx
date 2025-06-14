@@ -92,7 +92,7 @@ export default function ContactList() {
   const [contacts, setContacts] = useState<Contact[]>([]);
   useEffect(()=>{
     async function fetchdata(){
-      const res = await fetch("https://shivamforge-backend.onrender.com/contacts")
+      const res = await fetch("https://shivamforge-backend.onrender.com//contacts")
       console.log(res)
       const data = await res.json() 
       data.forEach((e)=>e.createdAt = new Date(e.createdAt))
@@ -131,7 +131,7 @@ export default function ContactList() {
 
   const updateContactStatus = async (id: string, status: 'approved' | 'pending' | 'blocked') => {
     
-    await fetch(`https://shivamforge-backend.onrender.com/contacts/${id}` , {
+    await fetch(`https://shivamforge-backend.onrender.com//contacts/${id}` , {
       method: 'PUT',
       headers: {
           'Content-Type': 'application/json'

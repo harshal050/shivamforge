@@ -29,7 +29,7 @@ const ProductsPage = () => {
 
   useEffect(() => {
     async function fetchProducts() {
-      const res = await fetch("https://shivamforge-backend.onrender.com/products");
+      const res = await fetch("https://shivamforge-backend.onrender.com//products");
       const data = await res.json();
       data.forEach((e: any) => {
         e.createdAt = new Date(e.createdAt);
@@ -42,7 +42,7 @@ const ProductsPage = () => {
 
   useEffect(() => {
     async function fetchCategories() {
-      const res = await fetch("https://shivamforge-backend.onrender.com/category");
+      const res = await fetch("https://shivamforge-backend.onrender.com//category");
       const data = await res.json();
       setProductCategories(data);
     }

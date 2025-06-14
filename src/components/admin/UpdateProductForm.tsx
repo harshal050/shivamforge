@@ -34,7 +34,7 @@ const formSchema = z.object({
 
 type FormValues = z.infer<typeof formSchema>;
 
-export default function UpdateProductForm() {
+export default function ProductForm() {
   const { id } = useParams();
   const [file, setFile] = useState<File | null>(null);
   const [imageURL, setImageURL] = useState('');
@@ -57,7 +57,7 @@ export default function UpdateProductForm() {
   // Fetch categories
   useEffect(() => {
     async function fetchCategories() {
-      const res = await fetch("https://shivamforge-backend.onrender.com/category");
+      const res = await fetch("https://shivamforge-backend.onrender.com//category");
       const data = await res.json();
       setcategories(data);
     }
@@ -69,7 +69,7 @@ export default function UpdateProductForm() {
     async function fetchProduct() {
       if (!id) return;
       try {
-        const res = await fetch(`https://shivamforge-backend.onrender.com/products/${id}`);
+        const res = await fetch(`https://shivamforge-backend.onrender.com//products/${id}`);
         const data = await res.json();
         setproduct(data);
         form.reset({
@@ -101,7 +101,7 @@ export default function UpdateProductForm() {
     setUploading(true);
     try {
       const imageBase64 = await toBase64(selectedFile);
-      const response = await axios.post('https://shivamforge-backend.onrender.com/products/upload', {
+      const response = await axios.post('https://shivamforge-backend.onrender.com//products/upload', {
         imageBase64,
       });
       setImageURL(response.data.url);
@@ -126,10 +126,17 @@ export default function UpdateProductForm() {
       ...data,
       image: imageURL,
     };
+    console.log("id of frontend "+id)
+    console.log("payload of frontend "+payload.name)
+    
+
+    if(!id){
+      return
+    }
 
     try {
-      const res = await fetch('https://shivamforge-backend.onrender.com/products', {
-        method: 'POST',
+      const res = await fetch(`https://shivamforge-backend.onrender.com//products/${id}`, {
+        method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload),
       });
@@ -152,7 +159,7 @@ export default function UpdateProductForm() {
 
   async function addCatagoryHandler() {
     try {
-      await fetch('https://shivamforge-backend.onrender.com/category', {
+      await fetch('https://shivamforge-backend.onrender.com//category', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name: catagorytext }),
@@ -175,7 +182,7 @@ export default function UpdateProductForm() {
 
   async function dleteCategoryHandler(id:String){
       console.log("delete clicked")
-      await fetch(`https://shivamforge-backend.onrender.com/category/${id}` , {
+      await fetch(`https://shivamforge-backend.onrender.com//category/${id}` , {
         method: 'Delete'
       })
         window.location.reload();
@@ -184,7 +191,7 @@ export default function UpdateProductForm() {
     async function autoFill() {
     setLoadingAutoFill(true);
     try {
-      const response = await fetch('https://shivamforge-backend.onrender.com/hf-callapi', {
+      const response = await fetch('https://shivamforge-backend.onrender.com//hf-callapi', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
