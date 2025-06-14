@@ -65,7 +65,7 @@ export default function ProductForm() {
 
   useEffect(()=>{
     async function fetchdata(){
-      const res = await fetch("https://shivamforge-backend.onrender.com//category")
+      const res = await fetch("https://shivamforge-backend.onrender.com/category")
       console.log(res)
       const data = await res.json() 
       // data.forEach((e)=>e.createdAt = new Date(e.createdAt))
@@ -90,7 +90,7 @@ export default function ProductForm() {
     setUploading(true);
     try {
       const imageBase64 = await toBase64(selectedFile);
-      const response = await axios.post('https://shivamforge-backend.onrender.com//products/upload', {
+      const response = await axios.post('https://shivamforge-backend.onrender.com/products/upload', {
         imageBase64,
       });
       setImageURL(response.data.url);
@@ -128,7 +128,7 @@ export default function ProductForm() {
     };
 
     try {
-      const res = await fetch('https://shivamforge-backend.onrender.com//products', {
+      const res = await fetch('https://shivamforge-backend.onrender.com/products', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload),
@@ -155,7 +155,7 @@ export default function ProductForm() {
   async function addCatagoryHandler(){
     console.log("catagoryyyyyyy "+catagorytext)
     try{
-      await fetch('https://shivamforge-backend.onrender.com//category' , {
+      await fetch('https://shivamforge-backend.onrender.com/category' , {
           method: 'POST',
           headers: {
               'Content-Type': 'application/json'
@@ -182,7 +182,7 @@ export default function ProductForm() {
 
   async function dleteCategoryHandler(id:String){
     console.log("delete clicked")
-    await fetch(`https://shivamforge-backend.onrender.com//category/${id}` , {
+    await fetch(`https://shivamforge-backend.onrender.com/category/${id}` , {
       method: 'Delete'
     })
       window.location.reload();
@@ -191,7 +191,7 @@ export default function ProductForm() {
   async function autoFill() {
   setLoadingAutoFill(true);
   try {
-    const response = await fetch('https://shivamforge-backend.onrender.com//hf-callapi', {
+    const response = await fetch('https://shivamforge-backend.onrender.com/hf-callapi', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

@@ -35,13 +35,13 @@ export default function DashboardStats() {
   // const [TotalInquiries , setTotalInquiries] = useState<string>("0")
   useEffect(()=>{
       async function fetchdataContactAndProduct(){
-        const res = await fetch("https://shivamforge-backend.onrender.com//contacts")
+        const res = await fetch("https://shivamforge-backend.onrender.com/contacts")
         const data = await res.json() 
         if(data.length>0){
           stats[0].value = data.length   
           console.log(data.length)
         }
-        // const res2 = await fetch("https://shivamforge-backend.onrender.com//products")
+        // const res2 = await fetch("https://shivamforge-backend.onrender.com/products")
         // const data2 = await res.json() 
         // stats[1].value = data2.length   
         // console.log("data.length2 "+data2.length)
@@ -52,13 +52,13 @@ export default function DashboardStats() {
 
     useEffect(()=>{
       async function fetchdataContactAndProduct(){
-        const res = await fetch("https://shivamforge-backend.onrender.com//products")
+        const res = await fetch("https://shivamforge-backend.onrender.com/products")
         const data = await res.json() 
         if(data.length>0){
           stats[1].value = data.length   
           console.log(data.length)
         }
-        // const res2 = await fetch("https://shivamforge-backend.onrender.com//products")
+        // const res2 = await fetch("https://shivamforge-backend.onrender.com/products")
         // const data2 = await res.json() 
         // stats[1].value = data2.length   
         // console.log("data.length2 "+data2.length)

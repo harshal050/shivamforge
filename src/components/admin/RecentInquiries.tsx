@@ -16,7 +16,7 @@ import { useEffect, useState } from 'react';
 // let [queryState , setqueryState] = useState<null>(null);
 // useEffect(()=>{
 //   async function fetchdata(){
-//     const res = await fetch("https://shivamforge-backend.onrender.com//contacts")
+//     const res = await fetch("https://shivamforge-backend.onrender.com/contacts")
 //     console.log(res)
 //     const data = await res.json() 
 //     // setqueryState(data)
@@ -78,7 +78,7 @@ export default function RecentInquiries() {
 
   useEffect(()=>{
     async function fetchdata(){
-      const res = await fetch("https://shivamforge-backend.onrender.com//contacts")
+      const res = await fetch("https://shivamforge-backend.onrender.com/contacts")
       console.log(res)
       const data = await res.json() 
       data.forEach((e)=>e.createdAt = new Date(e.createdAt))

@@ -49,7 +49,7 @@ export default function ContactForm() {
       
       
       console.log('detaaaaaaa:', data+" "+typeof(data));
-      const res = await fetch('https://shivamforge-backend.onrender.com//push-queue' , {
+      const res = await fetch('https://shivamforge-backend.onrender.com/push-queue' , {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -60,7 +60,7 @@ export default function ContactForm() {
       // console.log(resData)
 
 
-      // await fetch('https://shivamforge-backend.onrender.com//contacts' , {
+      // await fetch('https://shivamforge-backend.onrender.com/contacts' , {
       //   method: 'POST',
       //   headers: {
       //       'Content-Type': 'application/json'
@@ -68,7 +68,7 @@ export default function ContactForm() {
       //   body: JSON.stringify(data) 
       // })
 
-      // await fetch('https://shivamforge-backend.onrender.com//send-email' , {
+      // await fetch('https://shivamforge-backend.onrender.com/send-email' , {
       //   method: 'POST',
       //   headers: {
       //       'Content-Type': 'application/json'

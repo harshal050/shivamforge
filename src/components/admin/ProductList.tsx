@@ -81,7 +81,7 @@ export default function ProductList() {
 
     useEffect(()=>{
       async function fetchdata(){
-        const res = await fetch("https://shivamforge-backend.onrender.com//products")
+        const res = await fetch("https://shivamforge-backend.onrender.com/products")
         console.log(res)
         const data = await res.json() 
         data.forEach((e)=>e.createdAt = new Date(e.createdAt))
@@ -103,7 +103,7 @@ export default function ProductList() {
 
   const deleteProduct = async (id: string) => {
 
-    await fetch(`https://shivamforge-backend.onrender.com//products/${id}` , {
+    await fetch(`https://shivamforge-backend.onrender.com/products/${id}` , {
       method: 'DELETE'
     })
 
@@ -123,7 +123,7 @@ export default function ProductList() {
   }
 
 //   async function findNameUsingId(id:String){
-//     const res = await fetch(`https://shivamforge-backend.onrender.com//category/${id}`)
+//     const res = await fetch(`https://shivamforge-backend.onrender.com/category/${id}`)
 //     const data =  await res.json() 
 //     return data.name
 // }

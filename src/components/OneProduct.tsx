@@ -15,7 +15,7 @@ export default function ProductPage() {
 
   useEffect(() => {
     async function fetchProduct() {
-      const res = await fetch(`https://shivamforge-backend.onrender.com//products/${id}`);
+      const res = await fetch(`https://shivamforge-backend.onrender.com/products/${id}`);
       const data = await res.json();
       setProduct(data);
       setCategoryName(data.category);
