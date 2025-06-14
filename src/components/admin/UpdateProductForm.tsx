@@ -34,7 +34,7 @@ const formSchema = z.object({
 
 type FormValues = z.infer<typeof formSchema>;
 
-export default function ProductForm() {
+export default function UpdateProductForm() {
   const { id } = useParams();
   const [file, setFile] = useState<File | null>(null);
   const [imageURL, setImageURL] = useState('');
