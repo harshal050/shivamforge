@@ -111,6 +111,7 @@ export default function ContactForm() {
       });
       
       form.reset();
+      window.location.reload()
     } catch (error) {
       console.error('Error submitting form:', error);
       toast({
