@@ -109,9 +109,7 @@ export default function ContactForm() {
         title: 'Inquiry submitted!',
         description: 'We will get back to you as soon as possible.',
       });
-      
       form.reset();
-      window.location.reload()
     } catch (error) {
       console.error('Error submitting form:', error);
       toast({
@@ -121,6 +119,7 @@ export default function ContactForm() {
       });
     } finally {
       setIsSubmitting(false);
+      window.location.reload()
     }
   };
 
