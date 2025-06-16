@@ -25,7 +25,7 @@ export default function Footer() {
             <div className="flex flex-col space-y-2">
               <a href="mailto:Salesshivamforge@gmail.com" className="flex items-center text-sm text-gray-600 dark:text-gray-300 hover:text-forge-orange dark:hover:text-forge-orange transition-colors">
                 <Mail size={16} className="mr-2" />
-                Salesshivamforge@gmail.com
+                salesshivamforge@gmail.com
               </a>
               <a href="tel:+919265772827" className="flex items-center text-sm text-gray-600 dark:text-gray-300 hover:text-forge-orange dark:hover:text-forge-orange transition-colors">
                 <Phone size={16} className="mr-2" />
@@ -41,7 +41,7 @@ export default function Footer() {
               </a>
               <div className="flex items-start text-sm text-gray-600 dark:text-gray-300">
                 <MapPin size={16} className="mr-2 mt-1 flex-shrink-0" />
-                <span>Bhaktanya Industrial Area, Shapar (Veraval), Rajkot 360024</span>
+                <span>Chaitanya ind.area, ganga gate, near Shapar, Veraval, Shapar, Gujarat 360024</span>
               </div>
             </div>
           </div>

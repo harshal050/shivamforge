@@ -11,7 +11,7 @@ export default function ContactInfo() {
         Yash: +91 9265772827
         Hetvik: +91 6352877378
         Parth: +91 7600066117
-        Bhaktanya Industrial Area, Shapar (Veraval), Rajkot 360024`} />
+        Shapar (Veraval), Rajkot 360026 GJ, india`} />
 
       <div className="flex flex-col space-y-2">
         <h3 className="text-lg font-semibold text-forge-gray-dark dark:text-white">Address</h3>
@@ -19,8 +19,7 @@ export default function ContactInfo() {
           <MapPin className="h-5 w-5 text-forge-orange mr-3 mt-1 flex-shrink-0" />
           <p className="text-gray-600 dark:text-gray-300">
             Shivam Forge<br />
-            Bhaktanya Industrial Area,<br />
-            Shapar (Veraval), Rajkot 360024
+            Chaitanya ind.area, ganga gate, near Shapar, Veraval, Shapar, Gujarat 360024
           </p>
         </div>
       </div>

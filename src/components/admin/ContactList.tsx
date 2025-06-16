@@ -157,6 +157,28 @@ export default function ContactList() {
     });
   };
 
+
+  async function deleteItemHandler(id:String){
+    const res = await fetch(`https://shivamforge-backend.onrender.com/inquiries/${id}` , {
+      method:"Delete"
+    })
+    const data = await res.json()
+    if(data.success=='False'){
+      toast({
+          title: data.msg,
+          description: 'Please try again later',
+          variant: 'destructive',
+        });
+    }else{
+      toast({
+          title: data.msg,
+          description: 'Please try again later',
+        });
+    }
+    window.location.reload()
+    
+  }
+
   return (    
     <div className="space-y-4">
       <h1 className="text-2xl font-bold text-forge-gray-dark dark:text-white">
@@ -219,6 +241,13 @@ export default function ContactList() {
                           <X className="mr-2 h-4 w-4" />
                           Block
                         </DropdownMenuItem>
+                        <DropdownMenuItem
+                          onClick={() => deleteItemHandler(contact._id)}
+                          className="text-red-600 dark:text-red-1000 cursor-pointer"
+                        >
+                          <X className="" />
+                          Delete
+                        </DropdownMenuItem>
                       </DropdownMenuContent>
                     </DropdownMenu>
                   </TableCell>
@@ -231,3 +260,6 @@ export default function ContactList() {
     </div>
   );
 }
+
+
+// inquiries

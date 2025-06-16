@@ -15,6 +15,9 @@ import {
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { toast } from '@/hooks/use-toast';
+import Turnstile, { useTurnstile } from "react-turnstile";
+import { error } from 'console';
+
 
 const formSchema = z.object({
   name: z.string().min(2, { message: 'Name must be at least 2 characters' }),
@@ -27,6 +30,7 @@ type FormValues = z.infer<typeof formSchema>;
 
 export default function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [token , settoken] = useState<any>("")
 
   const form = useForm<FormValues>({
     resolver: zodResolver(formSchema),
@@ -47,15 +51,32 @@ export default function ContactForm() {
       
       // Simulate API delay
       
+      let newdata ={
+        data,
+        token
+      } 
       
-      console.log('detaaaaaaa:', data+" "+typeof(data));
+
+      
+      console.log('detaaaaaaa:', newdata+" "+typeof(newdata));
       const res = await fetch('https://shivamforge-backend.onrender.com/push-queue' , {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify(data) 
+        body: JSON.stringify(newdata) 
       })
+
+      const result = await res.json()
+      //@ts-ignore
+      console.log("res.success "+result.success)
+      //@ts-ignore
+      if(result.success=='False'){
+        throw new Error("invalid captcha error") 
+      }
+      
+
+    
       // const resData = await res.json()
       // console.log(resData)
 
@@ -178,6 +199,13 @@ export default function ContactForm() {
               </FormItem>
             )}
           />
+
+          <Turnstile onSuccess={(token)=>{
+            settoken(token)
+          }} sitekey={"0x4AAAAAABhKnFA2M2MV50sn"}/>
+
+        
+          
           
           <Button 
             type="submit" 

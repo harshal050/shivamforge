@@ -26,7 +26,7 @@ import Inquiries from "./pages/admin/Inquiries";
 import ProductForm from "./pages/admin/ProductForm";
 import Settings from "./pages/admin/Settings";
 import Infrastructure from "./pages/admin/Infrastructure";
-import UpdateProductForm from "./pages/admin/UpdateProduct"
+import UpdateProductPage from "./pages/admin/UpdateProduct"
 import ProcessPage from "./pages/Process.tsx";
 
 const queryClient = new QueryClient();
@@ -65,7 +65,7 @@ const AuthContextWrapper = () => (
       <Route path="/admin/dashboard" element={<AdminGuard><Dashboard /></AdminGuard>} />
       <Route path="/admin/products" element={<AdminGuard><Products /></AdminGuard>} />
       <Route path="/admin/products/new" element={<AdminGuard><ProductForm /></AdminGuard>} />
-      <Route path="/admin/products/update/:id" element={<AdminGuard><UpdateProductForm /></AdminGuard>} />
+      <Route path="/admin/products/update/:id" element={<AdminGuard><UpdateProductPage /></AdminGuard>} />
       <Route path="/admin/inquiries" element={<AdminGuard><Inquiries /></AdminGuard>} />
       <Route path="/admin/settings" element={<AdminGuard><Settings /></AdminGuard>} />
       <Route path="/admin/infrastructure" element={<AdminGuard><Infrastructure /></AdminGuard>} />

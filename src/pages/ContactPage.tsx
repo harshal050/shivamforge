@@ -62,14 +62,14 @@ const ContactPage = () => {
             </div>
             <iframe 
               title="Shivam Forge Location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.9345302188306!2d70.74998!3d22.29123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959ca9abf6a35b7%3A0x48a386299d7f5bd0!2sShapar%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1652433876302!5m2!1sen!2sin" 
+              src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14780.69948980821!2d70.75243749077805!3d22.15741453061799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395835b3ff756e3d%3A0xdad5abbf81ae969e!2sShivam%20forge!5e0!3m2!1sen!2sin!4v1750071561351!5m2!1sen!2sin'
               width="100%" 
               height="100%" 
               style={{ border: 0 }} 
               allowFullScreen={true} 
               loading="lazy" 
               referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
+            />
           </div>
         </div>
       </div>

@@ -23,6 +23,10 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
   const [user, setUser] = useState<User | null>(null);
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const navigate = useNavigate();
+    
+
+
+
 
   useEffect(() => {
     // Check for existing session in localStorage
@@ -33,13 +37,24 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
     setIsLoading(false);
   }, []);
 
+
+  async function apicall(){
+    const res = await fetch('https://shivamforge-backend.onrender.com/admin')
+    return await res.json()
+  }
+
+ 
   const login = async (username: string, password: string) => {
     setIsLoading(true);
     try {
       // For this demo, we'll use hardcoded credentials
       // In a real app, this would be an API call
+
+      const adminCredential = await apicall()
+      // console.log("username " +username)
+      // console.log("password "+password)
       
-      if (username === 'shivamforge' && password === 'shivamforge@9876') {
+      if (adminCredential && username === adminCredential.name && password === adminCredential.password) {
         const user = {
           id: '1',
           username: 'admin',
