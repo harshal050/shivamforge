@@ -16,7 +16,7 @@ export default function NavBar() {
     { name: 'Products', path: '/products' },
     // { name: 'Infrastructure', path: '/infrastructure' },
     { name: 'About', path: '/about' },
-    { name: 'Process', path: '/process' },
+    { name: 'Pocess', path: '/process' },
     { name: 'Contact', path: '/contact' },
   ];
 
@@ -41,12 +41,7 @@ export default function NavBar() {
 
   return (
       <>
-    <SEO title={"Shivam Forge Navbar"} description={`Home
-    Products
-    About
-    Pocess
-    Contact`}/>
-    
+    {/* <SEO title={"Navbar"} description={`Quality forging`}/> */}
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled 
