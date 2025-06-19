@@ -41,7 +41,7 @@ export default function NavBar() {
 
   return (
       <>
-    <SEO title={"Navbar"} description={`Home
+    <SEO title={"Shivam Forge Navbar"} description={`Home
     Products
     About
     Pocess
