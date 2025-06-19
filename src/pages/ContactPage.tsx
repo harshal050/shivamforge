@@ -54,12 +54,12 @@ const ContactPage = () => {
           </div>
 
           <div className="rounded-xl overflow-hidden shadow-md h-96 relative">
-            <div className="absolute inset-0 flex items-center justify-center bg-forge-gray-dark/20 z-10">
+            {/* <div className="absolute inset-0 flex items-center justify-center bg-forge-gray-dark/20 z-10">
               <div className="bg-white dark:bg-forge-gray-dark shadow-lg p-4 rounded-lg inline-flex items-center">
                 <MapPin className="h-6 w-6 text-forge-orange mr-2" />
                 <span className="font-medium text-forge-gray-dark dark:text-white">Shivam Forge Location</span>
               </div>
-            </div>
+            </div> */}
             <iframe 
               title="Shivam Forge Location"
               src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14780.69948980821!2d70.75243749077805!3d22.15741453061799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395835b3ff756e3d%3A0xdad5abbf81ae969e!2sShivam%20forge!5e0!3m2!1sen!2sin!4v1750071561351!5m2!1sen!2sin'
