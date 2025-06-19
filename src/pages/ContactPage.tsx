@@ -18,7 +18,7 @@ const ContactPage = () => {
           Yash Patel: +91 9265772827
           Hetvik Patel: +91 6352877378
           Parth Patel: +91 7600066117
-          Salesshivamforge@gmail.com
+          salesshivamforge@gmail.com
           Hours
           Monday - Friday: 9:00 AM - 6:00 PM
 

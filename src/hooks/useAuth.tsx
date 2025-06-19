@@ -39,7 +39,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
 
 
   async function apicall(){
-    const res = await fetch('https://shivamforge-backend.onrender.com/admin')
+    const res = await fetch('http://localhost:3000/admin')
     return await res.json()
   }
 

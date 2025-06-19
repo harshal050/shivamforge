@@ -18,7 +18,7 @@ const Settings = () => {
   
 
   async function callapi(){
-    const res =  await fetch('https://shivamforge-backend.onrender.com/admin')
+    const res =  await fetch('http://localhost:3000/admin')
     const data = await res.json()
     setuserdata(data)
   }
@@ -32,7 +32,7 @@ const Settings = () => {
       password : password.current.value
     }
     // console.log("newdata "+newdata.password)
-    const res =  await fetch(`https://shivamforge-backend.onrender.com/admin/${userdata._id}`,{
+    const res =  await fetch(`http://localhost:3000/admin/${userdata._id}`,{
       method:"Put",
       headers: {
         'Content-Type': 'application/json'

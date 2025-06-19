@@ -17,6 +17,7 @@ import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 import NotFound from "./pages/NotFound";
 import OneProductPage from './pages/OneProductPage'
+import ProcessPage from "./pages/Process.tsx";
 
 // Admin Pages
 import AdminLogin from "./pages/admin/AdminLogin";
@@ -27,7 +28,6 @@ import ProductForm from "./pages/admin/ProductForm";
 import Settings from "./pages/admin/Settings";
 import Infrastructure from "./pages/admin/Infrastructure";
 import UpdateProductPage from "./pages/admin/UpdateProduct"
-import ProcessPage from "./pages/Process.tsx";
 
 const queryClient = new QueryClient();
 

@@ -7,7 +7,7 @@ export default function ContactInfo() {
 
     <div className="space-y-6">
         <SEO title={"ContactInfo"} description={`Quality forging and casting products for farm equipment, automotive and heavy industries.
-        Salesshivamforge@gmail.com
+        salesshivamforge@gmail.com
         Yash: +91 9265772827
         Hetvik: +91 6352877378
         Parth: +91 7600066117
@@ -52,8 +52,8 @@ export default function ContactInfo() {
         </div>
         <div className="flex items-center">
           <Mail className="h-5 w-5 text-forge-orange mr-3" />
-          <a href="mailto:Salesshivamforge@gmail.com" className="text-gray-600 dark:text-gray-300 hover:text-forge-orange dark:hover:text-forge-orange transition-colors">
-            Salesshivamforge@gmail.com
+          <a href="mailto:salesshivamforge@gmail.com" className="text-gray-600 dark:text-gray-300 hover:text-forge-orange dark:hover:text-forge-orange transition-colors">
+            salesshivamforge@gmail.com
           </a>
         </div>
       </div>

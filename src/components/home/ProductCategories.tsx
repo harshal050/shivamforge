@@ -51,7 +51,7 @@ export default function ProductCategories() {
 
   useEffect(()=>{
     async function fetchdata(){
-      const res = await fetch("https://shivamforge-backend.onrender.com/category")
+      const res = await fetch("http://localhost:3000/category")
       console.log(res)
       const data = await res.json() 
       setcategoryName(data)
@@ -63,7 +63,7 @@ export default function ProductCategories() {
 
 useEffect(() => {
   async function fetchdata() {
-    const res = await fetch("https://shivamforge-backend.onrender.com/products");
+    const res = await fetch("http://localhost:3000/products");
     const data = await res.json();
     setProducts(data);
   }

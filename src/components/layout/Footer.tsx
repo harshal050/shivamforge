@@ -23,7 +23,7 @@ export default function Footer() {
               Quality forging and casting products for farm equipment, automotive and heavy industries.
             </p>
             <div className="flex flex-col space-y-2">
-              <a href="mailto:Salesshivamforge@gmail.com" className="flex items-center text-sm text-gray-600 dark:text-gray-300 hover:text-forge-orange dark:hover:text-forge-orange transition-colors">
+              <a href="mailto:salesshivamforge@gmail.com" className="flex items-center text-sm text-gray-600 dark:text-gray-300 hover:text-forge-orange dark:hover:text-forge-orange transition-colors">
                 <Mail size={16} className="mr-2" />
                 salesshivamforge@gmail.com
               </a>
