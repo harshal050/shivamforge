@@ -17,6 +17,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { toast } from '@/hooks/use-toast';
 import Turnstile, { useTurnstile } from "react-turnstile";
 import { error } from 'console';
+import SEO from '../SEO';
 
 
 const formSchema = z.object({
@@ -124,6 +125,8 @@ export default function ContactForm() {
   };
 
   return (
+    <>
+    <SEO title={"ContactForm"} description={`contact Form`}/>
     <div className="w-full max-w-md mx-auto">
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
@@ -217,5 +220,6 @@ export default function ContactForm() {
         </form>
       </Form>
     </div>
+    </>
   );
 }

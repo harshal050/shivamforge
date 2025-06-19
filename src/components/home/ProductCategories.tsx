@@ -3,6 +3,7 @@ import { useInView } from 'react-intersection-observer';
 import { Link } from 'react-router-dom';
 import { Category, Product,Categories } from '@/models/types';
 import {useEffect,useState} from 'react'
+import SEO from '../SEO';
 
 const categories = [
   {
@@ -97,6 +98,15 @@ useEffect(() => {
   });
 
   return (
+    <>
+    <SEO title={"Our Product Categories"} description={`Automotive
+    Oil And Gas Industry
+    Tractor And Farm Equipments
+    Mining
+    Industrial
+    Impression-Die Forging
+    Industrial Part`}/>
+    
     <section ref={ref} className="py-20 bg-white dark:bg-forge-gray-dark">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
@@ -140,5 +150,6 @@ useEffect(() => {
         </div>
       </div>
     </section>
+    </>
   );
 }

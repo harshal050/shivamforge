@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, ChevronDown } from 'lucide-react';
+import SEO from '../SEO';
 
 export default function Hero() {
   const [isVisible, setIsVisible] = useState(false);
@@ -20,6 +21,8 @@ export default function Hero() {
   };
 
   return (
+    <>
+    <SEO title={"Shivam Forge Hero section"} description={`Precision forging solutions powered by innovation, trust, and global standards.`}/>
     <div className="relative h-screen flex items-center">
       {/* Hero Background */}
       <div className="absolute inset-0 z-0 overflow-hidden">
@@ -90,5 +93,6 @@ export default function Hero() {
         </div>
       </div>
     </div>
+    </>
   );
 }

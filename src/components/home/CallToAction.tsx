@@ -2,9 +2,12 @@
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Phone, Mail } from 'lucide-react';
+import SEO from '../SEO';
 
 export default function CallToAction() {
   return (
+    <>
+    <SEO title={"Ready to Forge Your Success"} description={`Ready to Forge Your Success? Let's discuss how Shivam Forge can deliver the precise components your industry needs.`}/>
     <section className="py-20 relative overflow-hidden">
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-r from-forge-orange/90 to-forge-red/90 mix-blend-multiply"></div>
@@ -39,5 +42,6 @@ export default function CallToAction() {
         </div>
       </div>
     </section>
+    </>
   );
 }

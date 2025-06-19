@@ -1,6 +1,7 @@
 
 import { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
+import SEO from '../SEO';
 
 const features = [
   {
@@ -42,6 +43,8 @@ export default function Features() {
   });
 
   return (
+    <>
+    <SEO title={"Key Infrastructure at Shivam Forge"} description={`Bar Cutting Facility , Measurement & Lab Facility , Zinc Plating & Galvanizing , Shot Blasting , CNC / VMC Machining`}/>
     <section
       id="content-section"
       ref={ref}
@@ -86,5 +89,6 @@ export default function Features() {
         </div>
       </div>
     </section>
+    </>
   );
 }

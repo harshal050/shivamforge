@@ -4,6 +4,7 @@ import { ThemeToggle } from '@/components/ui/ThemeToggle';
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import SEO from '../SEO';
 
 export default function NavBar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -39,6 +40,13 @@ export default function NavBar() {
   }, [location]);
 
   return (
+      <>
+    <SEO title={"Navbar"} description={`Home
+    Products
+    About
+    Pocess
+    Contact`}/>
+    
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled 
@@ -125,5 +133,6 @@ export default function NavBar() {
         </div>
       )}
     </nav>
+    </>
   );
 }

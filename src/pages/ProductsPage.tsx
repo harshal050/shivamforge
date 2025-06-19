@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import { Category, Product } from '@/models/types';
 import { Link } from "lucide-react";
+import SEO from "@/components/SEO";
 
 const ProductsPage = () => {
   const navigate = useNavigate();
@@ -54,6 +55,8 @@ const ProductsPage = () => {
     : products.filter(product => product.category === activeCategory);
 
   return (
+    <>
+    <SEO title={"Product page"} description={`Our Products Explore our range of high-quality forging and casting products for various industries`}/>
     <Layout>
       <div className="bg-gradient-to-r from-forge-orange to-forge-red py-20 px-4">
         <div className="container mx-auto text-center">
@@ -135,6 +138,7 @@ const ProductsPage = () => {
       </div>
       
     </Layout>
+    </>
   );
 };
 

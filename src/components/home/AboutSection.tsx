@@ -1,6 +1,7 @@
 import React from 'react';
 import { useInView } from 'react-intersection-observer'; // Assuming useInView is from 'react-intersection-observer'
 import { Link } from 'react-router-dom'; // Assuming Link is from 'react-router-dom'
+import SEO from '../SEO';
 
 // --- Button Component Definition (Added to resolve compilation error) ---
 // This is a placeholder Button component. In a real application, you might
@@ -44,6 +45,8 @@ export default function ShivamForgeEdgeSection() {
   });
 
   return (
+    <>
+    <SEO title={"Aboutsection"} description={`The Shivam Forge Edge From design to delivery, quality enhancement to cost reduction, we bring together energized talent and cutting-edge technology to provide unmatched value to our customers.`}/>
     // Updated background colors for light and dark modes
     <section ref={ref} className={`py-20 bg-[${blueColors.lightBg}] dark:bg-[${blueColors.darkBg}]`}>
       <div className="container mx-auto px-4">
@@ -129,5 +132,6 @@ export default function ShivamForgeEdgeSection() {
         </div>
       </div>
     </section>
+    </>
   );
 }

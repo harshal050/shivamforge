@@ -1,11 +1,20 @@
 
 import { Link } from 'react-router-dom';
 import { Mail, Phone, MapPin } from 'lucide-react';
+import SEO from '../SEO';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
+    <>
+        <SEO title={"Contact INFO"} description={`Quality forging and casting products for farm equipment, automotive and heavy industries.
+
+salesshivamforge@gmail.com
+Yash: +91 9265772827
+Hetvik: +91 6352877378
+Parth: +91 7600066117
+Chaitanya ind.area, ganga gate, near Shapar, Veraval, Shapar, Gujarat 360024`}/>
     <footer className="bg-white dark:bg-forge-gray-dark border-t border-gray-200 dark:border-forge-gray">
       <div className="container mx-auto py-12 px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -96,5 +105,6 @@ export default function Footer() {
         </div>
       </div>
     </footer>
+    </>
   );
 }
