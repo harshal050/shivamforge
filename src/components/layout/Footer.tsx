@@ -1,6 +1,6 @@
 
 import { Link } from 'react-router-dom';
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, Phone, MapPin} from 'lucide-react';
 import SEO from '../SEO';
 
 export default function Footer() {
@@ -36,6 +36,25 @@ Chaitanya ind.area, ganga gate, near Shapar, Veraval, Shapar, Gujarat 360024`}/>
                 <Mail size={16} className="mr-2" />
                 salesshivamforge@gmail.com
               </a>
+              <a
+                href="https://www.facebook.com/people/Shivam-Forge/61562313057709/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center text-sm text-gray-600 dark:text-gray-300 hover:text-forge-orange dark:hover:text-forge-orange transition-colors"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  className="mr-2"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.99 3.66 9.13 8.44 9.88v-6.99H7.9v-2.89h2.54V9.84c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.87h2.78l-.44 2.89h-2.34v6.99C18.34 21.13 22 16.99 22 12z" />
+                </svg>
+                Facebook Page
+              </a>
+
               <a href="tel:+919265772827" className="flex items-center text-sm text-gray-600 dark:text-gray-300 hover:text-forge-orange dark:hover:text-forge-orange transition-colors">
                 <Phone size={16} className="mr-2" />
                 Yash: +91 9265772827
