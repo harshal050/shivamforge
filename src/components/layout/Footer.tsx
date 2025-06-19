@@ -8,7 +8,7 @@ export default function Footer() {
 
   return (
     <>
-        <SEO title={"Contact INFO"} description={`Quality forging and casting products for farm equipment, automotive and heavy industries.
+        <SEO title={"Shivam Forge"} description={`Quality forging and casting products for farm equipment, automotive and heavy industries.
 
 salesshivamforge@gmail.com
 Yash: +91 9265772827
