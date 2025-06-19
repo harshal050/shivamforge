@@ -44,9 +44,9 @@ export default function NavBar() {
     <SEO title={"Navbar"} description={`Home
     Products
     About
-    Process
+    Pocess
     Contact`}/>
-
+    
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled 
