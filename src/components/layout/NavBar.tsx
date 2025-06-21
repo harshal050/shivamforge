@@ -53,7 +53,7 @@ export default function NavBar() {
         <Link to="/" className="flex items-center">
           <img 
             src="https://res.cloudinary.com/dcuhpeczg/image/upload/v1749619186/products/oqynug8dvg6ydb1vxcbx.png" 
-            alt="Shivam Forge Logo" 
+            alt="Shivam Forge" 
             className="h-10 w-auto rounded-full border-1 border-white block mx-auto mb-2.5 object-cover">
           
           </img>

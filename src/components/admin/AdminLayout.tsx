@@ -76,7 +76,7 @@ export default function AdminLayout({ children }: AdminLayoutProps) {
                   </div> */}
                   <img 
                     src="https://res.cloudinary.com/dcuhpeczg/image/upload/v1749619186/products/oqynug8dvg6ydb1vxcbx.png" 
-                    alt="Shivam Forge Logo" 
+                    alt="Shivam Forge" 
                     className="h-12 w-auto rounded-full border-1 border-white block mx-auto mb-2.5 object-cover">
                   
                   </img>
@@ -87,7 +87,7 @@ export default function AdminLayout({ children }: AdminLayoutProps) {
               ) : (
                 <img 
                     src="https://res.cloudinary.com/dcuhpeczg/image/upload/v1749619186/products/oqynug8dvg6ydb1vxcbx.png" 
-                    alt="Shivam Forge Logo" 
+                    alt="Shivam Forge" 
                     className="h-7 w-11 w-auto rounded-full border-1 border-white block mx-auto mb-2.5 object-cover">
                   
                   </img>
@@ -153,7 +153,7 @@ export default function AdminLayout({ children }: AdminLayoutProps) {
           <Link to="/admin/dashboard" className="flex items-center">
             <img 
               src="https://res.cloudinary.com/dcuhpeczg/image/upload/v1749619186/products/oqynug8dvg6ydb1vxcbx.png" 
-              alt="Shivam Forge Logo" 
+              alt="Shivam Forge" 
               className="h-9 w-auto rounded-full border-1 border-white block mx-auto mb-2.5 object-cover">
             
             </img>  

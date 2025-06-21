@@ -23,7 +23,7 @@ Chaitanya ind.area, ganga gate, near Shapar, Veraval, Shapar, Gujarat 360024`}/>
             <div className="flex items-center">
              <img 
               src="https://res.cloudinary.com/dcuhpeczg/image/upload/v1749619186/products/oqynug8dvg6ydb1vxcbx.png" 
-              alt="Shivam Forge Logo" 
+              alt="Shivam Forge" 
               className="h-20 w-auto rounded-full border-1 border-white block ">
             
             </img>

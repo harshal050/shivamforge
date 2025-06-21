@@ -21,7 +21,7 @@ const AdminLogin = () => {
           <div className="inline-flex items-center mb-4">
             <img 
               src="https://res.cloudinary.com/dcuhpeczg/image/upload/v1749619186/products/oqynug8dvg6ydb1vxcbx.png" 
-              alt="Shivam Forge Logo" 
+              alt="Shivam Forge" 
               className="h-12 w-auto rounded-full border-1 border-white block mx-auto mb-2.5 object-cover">
             
             </img>
